@@ -97,10 +97,11 @@ This API project consists of the following endpoints:
   "pizza_id": 1,
   "restaurant_id": 3
 }
+```
 
-    Response format:
+  - Response format:
 
-json
+```json
 
 {
   "id": 1,
