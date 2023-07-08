@@ -1,12 +1,12 @@
 class RestaurantsController < ApplicationController
   wrap_parameters format: []
   rescue_from ActiveRecord::RecordNotFound, with: :render_record_not_found
-  rescue_from ActiveRecord::RecordInvalid,  with: :render_unprocessable_entity
   skip_before_action :verify_authenticity_token
-
+  
+  #Serializers for these actions can be found before the views folder.
   def index
     restaurants = Restaurant.all
-    render json: restaurants, status: :ok
+    render json: restaurants.as_json(except: [:pizzas, :created_at, :updated_at]), status: :ok
   end
   
 
@@ -40,8 +40,4 @@ class RestaurantsController < ApplicationController
     render json: {error: "#{exception.model.humanize} not found" }, status: :not_found
   end
 
-
-  def render_unprocessable_entity exception
-    render json: {error: exception.record.errors.full_messages }, status: :unprocessable_entity
-  end
 end

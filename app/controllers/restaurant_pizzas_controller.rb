@@ -9,7 +9,7 @@ class RestaurantPizzasController < ApplicationController
     pizza = restaurant_pizza.pizza
     render json: pizza, status: :ok
   end
-
+  
 
   private
 
