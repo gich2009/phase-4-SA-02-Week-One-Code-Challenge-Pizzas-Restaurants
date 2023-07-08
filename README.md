@@ -18,6 +18,7 @@ This API project consists of the following endpoints:
 - Lists all restaurants
 - Response format:
 json
+{
 [
   {
     "id": 1,
@@ -30,6 +31,7 @@ json
     "address": "69 W 55th St, New York, NY 10019"
   }
 ]
+}
 
 ### `GET /restaurants/:id`
 
