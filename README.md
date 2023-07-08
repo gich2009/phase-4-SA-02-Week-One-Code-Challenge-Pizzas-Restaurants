@@ -17,26 +17,24 @@ This API project consists of the following endpoints:
 ### `GET /restaurants`
 - Lists all restaurants
 - Response format:
-json
-{
-[
-  {
-    "id": 1,
-    "name": "Sottocasa NYC",
-    "address": "298 Atlantic Ave, Brooklyn, NY 11201"
-  },
-  {
-    "id": 2,
-    "name": "PizzArte",
-    "address": "69 W 55th St, New York, NY 10019"
-  }
-]
-}
+    json
+        [
+          {
+            "id": 1,
+            "name": "Sottocasa NYC",
+            "address": "298 Atlantic Ave, Brooklyn, NY 11201"
+          },
+          {
+            "id": 2,
+            "name": "PizzArte",
+            "address": "69 W 55th St, New York, NY 10019"
+          }
+        ]
 
 ### `GET /restaurants/:id`
 
-    Fetches a specific restaurant and the pizzas it serves.
-    Response format:
+-Fetches a specific restaurant and the pizzas it serves.
+-Response format:
 
 json
 
