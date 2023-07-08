@@ -138,8 +138,8 @@ Now you can access the API endpoints via http://localhost:3000.
 
 ## Contributing
 
-    Contributions are welcome. Please open up an issue or create PR if you would like to contribute.
+Contributions are welcome. Please open up an issue or create PR if you would like to contribute.
 
 ## License
 
-    This project is licensed under the MIT License.
+This project is licensed under the MIT License.
