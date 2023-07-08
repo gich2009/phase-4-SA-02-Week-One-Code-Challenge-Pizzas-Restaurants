@@ -110,7 +110,7 @@ This API project consists of the following endpoints:
 }
 ```
 
-Usage
+## Usage
 
 To run this project locally, you'll need to do the following:
 
@@ -135,10 +135,11 @@ To run this project locally, you'll need to do the following:
     run `rails s`
 
 Now you can access the API endpoints via http://localhost:3000.
-Contributing
+
+## Contributing
 
     Contributions are welcome. Please open up an issue or create PR if you would like to contribute.
 
-License
+## License
 
     This project is licensed under the MIT License.
